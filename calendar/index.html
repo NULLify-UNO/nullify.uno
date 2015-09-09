@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Primary Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SUB -->
+    <title>NULLify | Home</title>
+    <!--<link rel="shortcut icon" href="img/favicon.ico">-->
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="/addon/icons/font-awesome/css/font-awesome.min.css">
+
+    <!-- Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- Calendar --> 
+    <link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
+    <link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="font-family: 'Oswald', sans-serif;"> { NULLIFY }</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://wiki.nullify.uno" target="_blank"><i class="fa fa-briefcase"></i> Wiki</a></li>
+
+            <li class="active"><a href="#"><i class="fa fa-calendar"></i> Calendar<span class="sr-only">(current)</span></a></li>
+            <li><a href="http://ctf.nullify.uno" target="_blank"><i class="fa fa-tasks"></i> HSCTF</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Follow <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.facebook.com/nullifyuno" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/nullifyuno" target="_blank">Twitter</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://ctftime.org/team/573" target="_blank">CTF Time</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <div id='calendar' style="margin: 0px 25px 15px 25px;"></div>
+
+
+    <!-- jQuery 1.11.3 Required -->
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+
+    <!-- BootStrap-->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Calendar -->
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/fullcalendar.min.js'></script>
+
+    <!-- Google Calendar -->
+    <script type='text/javascript' src='fullcalendar/gcal.js'></script>
+
+    <script>
+
+      $(document).ready(function() {
+        
+
+        $('#calendar').fullCalendar({
+            height: ( $(window).height() - 100 ),
+            googleCalendarApiKey: 'AIzaSyCPqnxGGd4J7tjD0DXeb9O3sSTy2xejh9Y',
+            events: {
+                googleCalendarId: 'v9ttaft4su6aj12827b391aqb8@group.calendar.google.com'
+            },
+            editable: true,
+            eventLimit: true,
+        });
+        
+      });
+
+    </script>
+
+
+  </body>
+</html>
