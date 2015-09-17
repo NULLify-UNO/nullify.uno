@@ -4,9 +4,13 @@
 #wrapper {
     padding-left: 0;
     transition: all 0.5s ease 0s;
+    width: -moz-calc(100% - 150px);
+    width: -webkit-calc(100% - 150px);
+    width: calc(100% - 150px);
 }
 #wrapper.toggled {
     padding-left: 150px;
+    padding-right: 150px;
 }
 #sidebar-wrapper {
     background: #000 none repeat scroll 0 0;
@@ -93,13 +97,14 @@
 #rightbar-wrapper {
     background: #2F4F4F none repeat scroll 0 0;
     height: 100%;
-    right: 250px;
-    margin-right: -250px;
+    right: 150px;
+    margin-right: -150px;
     overflow-y: auto;
     position: fixed;
-    transition: all 0.5s ease 0s;
     width: 0;
+    top: 51px;
     z-index: 1000;
+    display: inline-block;
 }
 #wrapper #rightbar-wrapper {
     width: 150px;
