@@ -12,7 +12,9 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/home.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="/addon/icons/font-awesome/css/font-awesome.min.css">
 
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -58,27 +60,67 @@
       </div>
     </nav>
 
-    <div class="row">
-      <div class="col-md-6" style="margin: 0px 10px 0px 10px">
-        <a class="twitter-timeline" href="https://twitter.com/nullifyuno" data-widget-id="640043603981537280">Tweets by @nullifyuno</a>
+
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li class="sidebar-brand"> <a href="#">Nullify</a></li>
+          <li><a href="#">Extra</a></li>
+          <li><a href="#">Shit</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
       </div>
-        <a class="twitter-timeline" href="https://twitter.com/hashtag/csaw" data-widget-id="644590673945952256">#csaw Tweets</a>
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="col-xs-6">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-6">
+              <h1>NULLIFY</h1>
+                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">See Nullify Shit</a>
+
+                  <div class="row">
+                    <div class="col-md-6" style="margin: 0px 10px 0px 10px"> <a class="twitter-timeline" href="https://twitter.com/nullifyuno" data-widget-id="640043603981537280">Tweets by @nullifyuno</a>
+
+                    </div>
+                    <div class="col-md-6" style="margin: 0px 10px 0px 10px"> <a class="twitter-timeline" href="https://twitter.com/hashtag/hacking" data-widget-id="640044818920398848">#hacking Tweets</a>
+
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- /#page-content-wrapper -->
+      <!-- Rightbar -->
+      <div id="rightbar-wrapper">
+        <ul class="rightbar-nav">
+            <li class="rightbar-brand"> <a href="#">Sponsors</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Solutionary</a></li>
+            <li><a href="#">Dope</a></li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
     </div>
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
- 
     <!-- jQuery -->
     <script src="/addon/jquery/jquery-2.1.3.min.js"></script>
-    
+
     <!-- Bootstrap -->
     <script src="/js/bootstrap.min.js"></script>
 
     <!-- Analytics -->
     <script src="addon/analytics/google.js"></script>
+
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
 
   </body>
 </html>
