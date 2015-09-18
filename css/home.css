@@ -1,6 +1,10 @@
 .navbar {
     margin-bottom: 0px !important;
 }
+.navbar-nav > li >a {
+    text-align: center;
+}
+
 #wrapper {
     padding-left: 0;
     transition: all 0.5s ease 0s;
@@ -8,7 +12,7 @@
     width: -webkit-calc(100% - 150px);
     width: calc(100% - 150px);
 }
-#wrapper.toggled {
+#wrapper.pressed {
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -21,9 +25,10 @@
     position: fixed;
     transition: all 0.5s ease 0s;
     width: 0;
+    top: 51px;
     z-index: 1000;
 }
-#wrapper.toggled #sidebar-wrapper {
+#wrapper.pressed #sidebar-wrapper {
     width: 150px;
 }
 #page-content-wrapper {
@@ -31,7 +36,7 @@
     position: absolute;
     width: 100%;
 }
-#wrapper.toggled #page-content-wrapper {
+#wrapper.pressed #page-content-wrapper {
     margin-right: -250px;
     position: absolute;
 }
@@ -72,28 +77,71 @@
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     color: #fff;
 }
-@media (min-width: 768px) {
+
+@media(min-width:768px) {
     #wrapper {
-        padding-left: 150px;
+        padding-right: 0;
     }
-    #wrapper.toggled {
+    #wrapper.pressed {
+        padding-right: 150px;
+    }
+    #sidebar-wrapper {
+        width: 0;
+    }
+    #wrapper.pressed #sidebar-wrapper {
+        width: 150px;
+    }
+}
+@media(max-width:768px) {
+    #rightbar-wrapper {
+        position: fixed !important;
+        z-index: 1100 !important; 
+        bottom: 0 !important; 
+        left: 0 !important;
+        width: 100% !important;
+        height: 60px !important;
+        top: auto !important;
+    }
+    .rightbar-nav {
+        width: 100% !important;
+    }
+    .rightbar-nav li {
+        width:30% !important;
+        display: inline !important;
+        list-style-type: none !important;
+    }
+    .rightbar-nav li a {
+        display: inline-block !important;
+        margin-left: 6%;
+        width: 25%;
+        text-align: center;
+    }
+    .rightbar-nav ul {
+        /*list-style-type: none !important;*/
+        /*margin: 0 !important;*/
+        padding: 0 !important;
+        overflow: hidden;
+    }
+    .rightbar-nav > .rightbar-brand a {
+        display: none !important;
+    }
+
+
+
+/*    #wrapper {
+        padding-right: 0;
+    }
+    #wrapper.pressed {
         padding-left: 0;
     }
     #sidebar-wrapper {
-        width: 150px;
-    }
-    #wrapper.toggled #sidebar-wrapper {
         width: 0;
     }
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-    #wrapper.toggled #page-content-wrapper {
-        margin-right: 0;
-        position: relative;
-    }
+    #wrapper.pressed #sidebar-wrapper {
+        width: 0;
+    }*/
 }
+
 #rightbar-wrapper {
     background: #2F4F4F none repeat scroll 0 0;
     height: 100%;

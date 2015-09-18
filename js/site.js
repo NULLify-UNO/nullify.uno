@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 //show shit when button is pressed
-$("#menu-toggle").click(function (e) {
+$("#sidebar-toggle").click(function (e) {
   e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
+  $("#wrapper").toggleClass("pressed");
 });
