@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  //hide shit first
-  $("#wrapper").toggleClass("toggled");
+  console.log('adam rocks');
 });
 
 //show shit when button is pressed
