@@ -4,6 +4,11 @@
 .navbar-nav > li >a {
     text-align: center;
 }
+.fa-menu {
+    position: relative;
+    transform: translateY(100%);
+    margin-right: 15px;
+}
 
 #wrapper {
     padding-left: 0;
@@ -17,10 +22,10 @@
     padding-right: 150px;
 }
 #sidebar-wrapper {
-    background: #000 none repeat scroll 0 0;
+    background: rgb(230, 230, 230) none repeat scroll 0 0;
     height: 100%;
-    left: 250px;
-    margin-left: -250px;
+    left: 150px;
+    margin-left: -150px;
     overflow-y: auto;
     position: fixed;
     transition: all 0.5s ease 0s;
@@ -37,7 +42,7 @@
     width: 100%;
 }
 #wrapper.pressed #page-content-wrapper {
-    margin-right: -250px;
+    margin-right: -150px;
     position: absolute;
 }
 .sidebar-nav {
@@ -46,7 +51,7 @@
     padding: 0;
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 150px;
 }
 .sidebar-nav li {
     line-height: 40px;
@@ -58,7 +63,7 @@
     text-decoration: none;
 }
 .sidebar-nav li a:hover {
-    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+    background: #999999 none repeat scroll 0 0;
     color: #fff;
     text-decoration: none;
 }
@@ -106,14 +111,12 @@
         width: 100% !important;
     }
     .rightbar-nav li {
-        width:30% !important;
         display: inline !important;
         list-style-type: none !important;
     }
     .rightbar-nav li a {
         display: inline-block !important;
-        margin-left: 6%;
-        width: 25%;
+        width: 32%;
         text-align: center;
     }
     .rightbar-nav ul {
@@ -122,7 +125,7 @@
         padding: 0 !important;
         overflow: hidden;
     }
-    .rightbar-nav > .rightbar-brand a {
+    .rightbar-nav > .rightbar-brand  {
         display: none !important;
     }
 
@@ -143,7 +146,7 @@
 }
 
 #rightbar-wrapper {
-    background: #2F4F4F none repeat scroll 0 0;
+    background: #3C4048 none repeat scroll 0 0;
     height: 100%;
     right: 150px;
     margin-right: -150px;
@@ -163,14 +166,14 @@
     padding: 0;
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 150px;
 }
 .rightbar-nav li {
     line-height: 40px;
     text-indent: 20px;
 }
 .rightbar-nav li a {
-    color: #999999;
+    color: #C8C8CE;
     display: block;
     text-decoration: none;
 }
@@ -183,12 +186,12 @@
     text-decoration: none;
 }
 .rightbar-nav > .rightbar-brand {
-    font-size: 18px;
-    height: 65px;
+    font-size: 22px;
+    height: 50px;
     line-height: 60px;
-}
-.rightbar-nav > .rightbar-brand a {
-    color: #999999;
+    color: #fff;
+    border-bottom: white;
+    border-bottom-style: ridge;
 }
 .rightbar-nav > .rightbar-brand a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
