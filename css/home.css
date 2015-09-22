@@ -190,8 +190,7 @@
     height: 50px;
     line-height: 60px;
     color: #fff;
-    border-bottom: white;
-    border-bottom-style: ridge;
+
 }
 .rightbar-nav > .rightbar-brand a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
