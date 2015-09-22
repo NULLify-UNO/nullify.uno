@@ -30,6 +30,15 @@ html, body {
 
 /*NEW*/
 
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
 /* navbar */
 .navbar-default {
     background: rgba(255,255,255,1);
@@ -69,3 +78,14 @@ html, body {
     border-top-color: #777;
     border-bottom-color: #777;
 }
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+
