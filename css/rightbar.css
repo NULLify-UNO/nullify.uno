@@ -1,0 +1,97 @@
+/**************************************
+    RIGHTBAR CSS
+***************************************/
+
+@media(min-width:768px) {
+    #wrapper #mp-pusher {
+        padding-right: 0;
+    }
+    #wrapper.pressed {
+        padding-right: 150px;
+    }
+    #sidebar-wrapper {
+        width: 0;
+    }
+    #wrapper.pressed #sidebar-wrapper {
+        width: 150px;
+    }
+}
+@media(max-width:768px) {
+    #rightbar-wrapper {
+        position: fixed !important;
+        z-index: 1100 !important; 
+        bottom: 0 !important; 
+        left: 0 !important;
+        width: 100% !important;
+        height: 60px !important;
+        top: auto !important;
+    }
+    .rightbar-nav {
+        width: 100% !important;
+    }
+    .rightbar-nav li {
+        display: inline !important;
+        list-style-type: none !important;
+    }
+    .rightbar-nav li a {
+        display: inline-block !important;
+        width: 32%;
+        text-align: center;
+    }
+    .rightbar-nav ul {
+        padding: 0 !important;
+        overflow: hidden;
+    }
+    .rightbar-nav > .rightbar-brand  {
+        display: none !important;
+    }
+}
+
+#rightbar-wrapper {
+    background: #3C4048 none repeat scroll 0 0 !important;
+    height: 100%;
+    right: 150px;
+    margin-right: -150px;
+    overflow-y: auto;
+    position: fixed;
+    width: 150px;
+    top: 28px;
+    z-index: 1000;
+    display: inline-block;
+}
+.rightbar-nav {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+}
+.rightbar-nav li {
+    line-height: 40px;
+    text-indent: 20px;
+}
+.rightbar-nav li a {
+    color: #C8C8CE;
+    display: block;
+    text-decoration: none;
+}
+.rightbar-nav li a:hover {
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+    color: #fff;
+    text-decoration: none;
+}
+.rightbar-nav li a:active, .rightbar-nav li a:focus {
+    text-decoration: none;
+}
+.rightbar-nav > .rightbar-brand {
+    font-size: 22px;
+    height: 50px;
+    line-height: 60px;
+    color: #fff;
+
+}
+.rightbar-nav > .rightbar-brand a:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+}

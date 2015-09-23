@@ -1,0 +1,65 @@
+/**************************************
+    NAVBAR CSS
+***************************************/
+.navbar {
+    margin-bottom: 0px !important;
+}
+.navbar-nav > li >a {
+    text-align: center;
+}
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar-toggle.navbar-left {
+  float: left;
+  margin-left: 10px;
+}
+.nav-thin {
+  background-color: #f5f5f5;
+}
+.icon-menu {
+  font-size: 14px;
+  color: gray;
+  padding-left: 25px;
+  padding-top: 5px;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+}
+.logo-container {
+  padding-top: 5px;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+} a > img {
+    vertical-align: inherit !important;
+  }
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.icon-cal {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: gray;
+  padding-right: 25px;
+  padding-top: 4px;
+  cursor: pointer;  
+  float: right;
+  display: inline-block;
+} a {
+    color: gray;
+  }
+  a:hover {
+    color: gray;
+    text-decoration: none;
+  }
+.nav-wording {
+  margin-left: 5px;
+}
