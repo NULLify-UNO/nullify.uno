@@ -684,3 +684,20 @@ a, a:visited, a:hover, a:active {
 
 
 }
+
+
+
+/* Table Fix */
+table {
+    width:100%;
+}
+th {
+    text-align:center;
+}
+
+td {
+    text-align:center;
+    width:20%; 
+}
+
+
