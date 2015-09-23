@@ -28,11 +28,11 @@ body {
 }
 
 .mp-level a:hover, a:focus {
-    background: #999 none repeat scroll 0px 0px;
+    /*background: #0b9444 none repeat scroll 0px 0px;*/
     color: #fff;
     outline: none;
     text-decoration: none;
-}
+} 
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
@@ -511,7 +511,7 @@ html, body, .wrapper, .scroller {
     margin-top: -.75em;
 }
 .mp-level > ul li a {
-    color: white;
+    color: #fff;
 }
 .menu-wording {
     margin-left: 15px;
