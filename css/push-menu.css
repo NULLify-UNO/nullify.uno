@@ -505,14 +505,14 @@ html, body, .wrapper, .scroller {
 .no-js .mp-menu > .mp-level {
     display: block;
 }
-
 .fa-menu {
     position: relative;
     transform: translateY(100%);
-    /*margin-right: 15px;*/
     margin-top: -.75em;
 }
-
 .mp-level > ul li a {
     color: white;
+}
+.menu-wording {
+    margin-left: 15px;
 }
