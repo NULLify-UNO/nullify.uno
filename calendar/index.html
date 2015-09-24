@@ -7,71 +7,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- SUB -->
     <title>NULLify | Home</title>
-    <!--<link rel="shortcut icon" href="img/favicon.ico">-->
+    
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/addon.css" rel="stylesheet">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="/addon/icons/font-awesome/css/font-awesome.min.css">
-
-    <!-- Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Righteous|Viga|Audiowide' rel='stylesheet' type='text/css'>
+    <script src="/js/modernizr.custom.js"></script>
 
     <!-- Calendar --> 
     <link href='fullcalendar/fullcalendar.css' rel='stylesheet' />
     <link href='fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
 
+    <!-- css files -->
+
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/push-menu.css">
 
   </head>
   <body>
+    <div class="wrapper">
+      <!-- Push Wrapper -->
+      <div class="mp-pusher" id="mp-pusher">
+        <!-- mp-menu -->
+        <nav id="mp-menu" class="mp-menu">
+          <div class="mp-level">
+            <h2>Menu</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">Capture-the-Flag</span>
+                  <i class="fa fa-flag fa-menu fa-pull-right"></i>
+                </a>
+                <div class="mp-level">
+                  <h2>CTFs</h2>
+                  <a class="mp-back" href="#">back<i class="fa fa-chevron-right fa-menu fa-pull-right"></i></a>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">Writeups</span>
+                        <i class="fa fa-pencil fa-menu fa-pull-right"></i>
+                      </a>
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+                      </a>
+                      <div class="mp-level">
+                        <h2>CTF Writeups</h2>
+                        <a class="mp-back" href="#">back<i class="fa fa-chevron-right fa-menu fa-pull-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="http://nullify-ctf.blogspot.com/" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Blog</span>
+                              <i class="fa fa-rss fa-menu fa-pull-right"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://wiki.nullify.uno" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Wiki</span>
+                              <i class="fa fa-wikipedia-w fa-menu fa-pull-right"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.github.com/ctfs" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">References</span>
+                              <i class="fa fa-github fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="/calendar/"><i class="fa fa-chevron-left"></i><span class="menu-wording">Calendar</span>
+                        <i class="fa fa-calendar fa-menu fa-pull-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/" style="font-family: 'Oswald', sans-serif;"> { NULLIFY }</a>
+              <li>
+
+                <a href="http://wiki.nullify.uno" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Wiki</span>
+                  <i class="fa fa-wikipedia-w fa-menu fa-pull-right"></i>
+                </a>
+
+              </li>
+
+              <li>
+
+                <a href="http://ctf.nullify.uno" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">HSCTF</span>
+                  <i class="fa fa-tasks fa-menu fa-pull-right"></i>
+                </a>
+
+              </li>
+
+              <li>
+                <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">Development</span>
+                  <i class="fa fa-code fa-menu fa-pull-right"></i>
+                </a>
+                <div class="mp-level">
+                  <h2>Development</h2>
+                  <a class="mp-back" href="#">back<i class="fa fa-chevron-right fa-menu fa-pull-right"></i></a>
+                  <ul>
+                    <li>
+                      <a><i class="fa fa-chevron-left"></i><span class="menu-wording">High School CTF</span>
+                        <i class="fa fa-graduation-cap fa-menu fa-pull-right"></i>
+                      </a>
+                      <div class="mp-level">
+                        <h2>High School CTF</h2>
+                          <a class="mp-back" href="#">back<i class="fa fa-chevron-right fa-menu fa-pull-right"></i></a>
+                        <ul>
+                          <li>
+                            <a href="http://www.nullify-ctf.com/" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">2014</span>
+                              <i class="fa fa-sitemap fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                            </a>
+                          </li> 
+                          <li>
+                            <a href="http://ctf.nullify.uno" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">2015</span>
+                              <i class="fa fa-sitemap fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="https://www.github.com/NULLify-UNO" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Github</span>
+                        <i class="fa fa-github fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">Team</span>
+                  <i class="fa fa-users fa-menu fa-pull-right"></i>
+                </a>
+                <div class="mp-level">
+                  <h2>Nullify</h2>
+                  <a class="mp-back" href="#">back<i class="fa fa-chevron-right fa-menu fa-pull-right"></i></a>
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">About Nullify</span>
+                        <i class="fa fa-info-circle fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">About Our Team</span>
+                        <i class="fa fa-info-circle fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">Social Media</span>
+                  <i class="fa fa-connectdevelop fa-menu fa-pull-right"></i>
+                </a>
+                <div class="mp-level">
+                  <h2>Social Media</h2>
+                  <a class="mp-back" href="#">back<i class="fa fa-chevron-right fa-menu fa-pull-right"></i></a>
+                  <ul>
+                    <li>
+                      <a href="https://www.twitter.com/nullifyuno" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Twitter</span>
+                        <i class="fa fa-twitter fa-menu fa-pull-right" style="padding-right: 4.5px;"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/groups/nullifyuno" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Facebook (Public)</span>
+                        <i class="fa fa-facebook fa-menu fa-pull-right" style="padding-right: 10px;"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/groups/Nullify1516/" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Facebook (Private)</span>
+                        <i class="fa fa-facebook fa-menu fa-pull-right" style="padding-right: 10px;"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/groups/UNOnullify/" target="_blank"><i class="fa fa-chevron-left"></i><span class="menu-wording">Facebook (Alumni)</span>
+                        <i class="fa fa-facebook fa-menu fa-pull-right" style="padding-right: 10px;"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- /mp-menu -->
+
+        <div class="nav-thin">
+          <div class="icon-menu" id="trigger">
+            <i class="fa fa-bars"></i>
+            <span class="nav-wording">MENU</span>
+          </div>
+          <div class="icon-cal">
+            <a href="/calendar/">
+              <i class="fa fa-calendar"></i>
+              <span class="nav-wording">CALENDAR</span>
+            </a>
+          </div>
+            <div class="logo-container">
+            <!-- <a class="logo" href="/" style="color: white;"> { NULLIFY }</a> -->
+              <a href="/"><img class="logo" src="/img/favicons/favicon.ico"></img></a>
+          </div>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="http://wiki.nullify.uno" target="_blank"><i class="fa fa-briefcase"></i> Wiki</a></li>
 
-            <li class="active"><a href="#"><i class="fa fa-calendar"></i> Calendar<span class="sr-only">(current)</span></a></li>
-            <li><a href="http://ctf.nullify.uno" target="_blank"><i class="fa fa-tasks"></i> HSCTF</a></li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Follow <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://www.facebook.com/nullifyuno" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/nullifyuno" target="_blank">Twitter</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="https://ctftime.org/team/573" target="_blank">CTF Time</a></li>
-              </ul>
-            </li>
-          </ul>
-
-        </div>
+        <div id='calendar' style="margin: 20px 25px 15px 25px;"></div>
+        
       </div>
-    </nav>
+      <!-- /pusher -->
+    </div>
+    <!-- /wrapper -->
 
-    <div id='calendar' style="margin: 0px 25px 15px 25px;"></div>
-
-
-    <!-- jQuery 1.11.3 Required -->
-    <script src='fullcalendar/lib/jquery.min.js'></script>
-
-    <!-- BootStrap-->
+    <!-- jQuery -->
+    <script src="/addon/jquery/jquery-2.1.3.min.js"></script>
+    <!-- Bootstrap -->
     <script src="/js/bootstrap.min.js"></script>
-
+    <!-- Analytics -->
+    <script src="/addon/analytics/google.js"></script>
+    <!-- SiteJS -->
+    <script src="/js/site.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/mlpushmenu.js"></script>
     <!-- Calendar -->
     <script src='fullcalendar/lib/moment.min.js'></script>
     <script src='fullcalendar/lib/jquery.min.js'></script>
@@ -99,6 +257,9 @@
 
     </script>
 
+    <script>
+      new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+    </script>
 
   </body>
 </html>
