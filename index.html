@@ -8,7 +8,7 @@
     <!-- SUB -->
     <title>NULLify | Home</title>
     
-    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link id="dynamic-favicon" rel="shortcut icon" href="img/favicons/favicon.ico">
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +32,8 @@
       <div class="mp-pusher" id="mp-pusher">
         <!-- mp-menu -->
         <nav id="mp-menu" class="mp-menu">
-          <div class="mp-level">
-            <h2>Menu</h2>
+          <div id="mp-level" class="mp-level">
+            <h2 id="headingMenu">Menu</h2>
             <ul>
               <li>
                 <a href="#"><i class="fa fa-chevron-left"></i><span class="menu-wording">Capture-the-Flag</span>
@@ -202,13 +202,14 @@
             </a>
           </div>
             <div class="logo-container">
-              <a href="/"><img class="logo" src="img/favicons/favicon-96x96.png"></img></a>
+              <a href="/"><img id="main-logo" class="logo" src="img/favicons/favicon-96x96.png"></img></a>
           </div>
         </div>
 
         <div id="page-content-wrapper">
         <!-- Page Content -->
           <div class="container-fluid">
+            <h1 class="contentHeader">NULLIFY</h1>
             <div class="row">
               <div = id="graph-content" class="col-md-12">
                 <h1 class="contentHeader"></h1>
@@ -265,10 +266,9 @@
                 <!-- /Rightbar -->
 
 
-
-
               </div>
               <!-- /graph-content -->
+              <input id="toggle" type="checkbox">
             </div>
             <!-- /row -->
           </div>
